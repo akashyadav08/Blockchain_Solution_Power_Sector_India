@@ -19,7 +19,16 @@ sustainable practices.
 ## Features 
 The Energy Dapp provides the following features:
 - Dashboard: Displays various metrics related to energy production, consumption, transactions, and participants.
+1) Total Energy Production and Consumption: Two separate dynamic blocks or cards showing the total energy produced and consumed in the network.
+2) Energy Transactions: Show the number of energy transactions (sales, purchases) that have occurred on the platform.
+3) Active Participants: Show the number of active participants (producers and consumers) on the network.
+4) Graphs: Display visual data in the form of pie charts or bar charts that represent the distribution of energy consumption and production.
+5) Latest Transactions: A small section showing the latest energy transactions that have occurred on the network.
 - Supply Chain: Visualizes the supply chain of energy production and consumption through a diagram and table.
+1) A visual diagram of the supply chain - This can be a simple graphical representation of nodes (energy producers, distributors, and consumers) and their connections.
+2) An interactive table listing all nodes, their energy production/consumption, and status - This could be a sortable and filterable table for ease of use.
 - Energy Market: Facilitates trading of energy tokens, displaying the current token price, and transaction history.
 - Consumption Analytics: Shows analytics and trends of energy consumption over different time periods.
 - Nodes: Allows managing nodes with power units and ether balances.
+
+## Future Updates : 
