@@ -15,3 +15,11 @@ distribution.
 3. Consumption Analytics: Use blockchain’s data storage capabilities to record and
 analyze daily energy consumption. This data will be invaluable for grid optimization, infrastructure upgrades, and for providing incentives to communities that adopt
 sustainable practices.
+
+## Features 
+The Energy Dapp provides the following features:
+- Dashboard: Displays various metrics related to energy production, consumption, transactions, and participants.
+- Supply Chain: Visualizes the supply chain of energy production and consumption through a diagram and table.
+- Energy Market: Facilitates trading of energy tokens, displaying the current token price, and transaction history.
+- Consumption Analytics: Shows analytics and trends of energy consumption over different time periods.
+- Nodes: Allows managing nodes with power units and ether balances.
