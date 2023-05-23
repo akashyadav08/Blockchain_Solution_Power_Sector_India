@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Dapp</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Energy Dapp</h1>
+    </header>
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+        <div class="dashboard-container">
+            <div id="total-energy" class="dashboard-card">
+                <h3>Total Energy</h3>
+                <p class="energy-produced">Produced: <span id="energy-produced-value">0</span> kWh</p>
+                <p class="energy-consumed">Consumed: <span id="energy-consumed-value">0</span> kWh</p>
+            </div>
+            <div id="transactions" class="dashboard-card">
+                <h3>Transactions</h3>
+                <p id="transactions-value">0</p>
+            </div>
+            <div id="participants" class="dashboard-card">
+                <h3>Participants</h3>
+                <p id="participants-value">0</p>
+            </div>
+            <div id="energy-chart" class="dashboard-card">
+                <!-- D3.js chart will be rendered here -->
+            </div>
+            <div id="latest-transactions" class="dashboard-card">
+                <h3>Latest Transactions</h3>
+                <ul id="transactions-list">
+                    <!-- Latest transactions will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Supply Chain -->
+    <section id="supply-chain">
+        <h2>Supply Chain</h2>
+    
+        <div id="chain-diagram">
+            <!-- Supply chain diagram will be rendered here -->
+        </div>
+    
+        <table id="chain-table">
+            <thead>
+                <tr>
+                    <th>Node ID</th>
+                    <th>Type (Producer/Consumer)</th>
+                    <th>Energy (kWh)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Nodes data will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+    
+<!-- Energy Market -->
+<section id="energy-market">
+    <h2>Energy Market</h2>
+
+    <div class="market-container">
+        <div id="token-price" class="market-card">
+            <h3>Current Token Price</h3>
+            <p id="token-price-value">0</p>
+        </div>
+
+        <div id="trade-form" class="market-card">
+            <h3>Trade Tokens</h3>
+            <form id="buy-form">
+                <label for="buy-amount">Buy Tokens</label>
+                <input type="number" id="buy-amount" name="buy-amount">
+                <button type="submit">Buy</button>
+            </form>
+            <form id="sell-form">
+                <label for="sell-amount">Sell Tokens</label>
+                <input type="number" id="sell-amount" name="sell-amount">
+                <button type="submit">Sell</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="transaction-history" class="market-card">
+        <h3>Transaction History</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Transaction ID</th>
+                    <th>Tokens</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Transaction history will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Consumption Analytics -->
+<section id="consumption-analytics">
+    <h2>Consumption Analytics</h2>
+    <div class="analytics-container">
+        <div class="filter-options">
+            <h3>Select Time Period</h3>
+            <select id="time-period">
+                <option value="hourly">Hourly</option>
+                <option value="daily">Daily</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+        </div>
+        
+        <div class="chart-container">
+            <canvas id="consumption-chart"></canvas>
+        </div>
+    </div>
+</section>
+<!-- Nodes Section -->
+<section id="nodes-section">
+    <h2>Nodes</h2>
+    <div id="nodes-container">
+        <!-- Nodes will be generated here dynamically -->
+    </div>
+</section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/truffle-contract@4.0.31/dist/truffle-contract.min.js"></script>
+    <script src="app.js"></script> <!-- Connect the JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
+
