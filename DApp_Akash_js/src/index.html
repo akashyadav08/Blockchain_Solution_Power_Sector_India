@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Supply Chain Dapp</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@truffle/contract@4.3.30/dist/truffle-contract.min.js"></script>
+  </head>
+  <body>
+    <div id="loader">
+      <p>Loading...</p>
+    </div>
+    <div id="content" style="display: none;">
+      <h1>Energy Supply Chain</h1>
+      <p id="account-address"></p>
+      <p>Your Energy Balance: </p>
+      <div id="energy-balance"></div>
+
+      <h2>Buy Energy</h2>
+      <input id="energy-to-buy" type="number" placeholder="Enter energy amount to buy">
+      <button id="buy-button">Buy</button>
+
+      <h2>Sell Energy</h2>
+      <input id="energy-to-sell" type="number" placeholder="Enter energy amount to sell">
+      <button id="sell-button">Sell</button>
+
+      <h2>Energy Balance History</h2>
+      <table id="balance-history">
+        <tr>
+          <th>Timestamp</th>
+          <th>Energy Balance</th>
+        </tr>
+      </table>
+    </div>
+
+    <button onclick="login()">Login with MetaMask</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
